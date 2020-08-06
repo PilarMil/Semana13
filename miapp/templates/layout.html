@@ -22,16 +22,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="/inicio">Inicio</a>
+                    <a href="{%url 'inicio'%}">Inicio</a>
                 </li>
                 <li>
-                    <a href="/saludo">Mensaje de Saludo</a>
+                    <a href="{%url 'saludo'%}">Mensaje de Saludo</a>
                 </li>
                 <li>
-                    <a href="/rango">Rango de [a,b]</a>
+                    <a href="{%url 'rango'%}">Rango de [a,b]</a>
                 </li>
                 <li>
-                    <a href="/rango2/10/15">Mostrar Números [10,15]</a>
+                    <a href="{%url 'rango2'%}">Mostrar Números [10,15]</a>
                 </li>
             </ul>
         </nav>
@@ -53,7 +53,7 @@
 
         </div>
         <footer>
-            UNTELS - Lenguaje de Programacion III &COPY; Pilar Milagros Navarro Espinoza
+            UNTELS - Lenguaje de Programacion III &COPY; Pilar Milagros Navarro Espinoza - {% now "d/m/Y h:m:s"  %}
         </footer>
 
     </body>
